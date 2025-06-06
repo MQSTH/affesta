@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -8,7 +7,7 @@
     <link rel="shortcut icon" href="logo.jpeg" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* Reset dan Base Styles */
+                /* Reset dan Base Styles */
         * {
             margin: 0;
             padding: 0;
@@ -53,7 +52,7 @@
         }
 
         .navbar.scrolled {
-            background: rgba(0, 0, 0,100);
+            background: rgba(0, 0, 0, 0.95);
             padding: 17px 0;
         }
 
@@ -187,7 +186,7 @@
         /* Hero Section dengan padding yang diperbaiki */
         .hero-section {
             min-height: 100vh;
-            background: linear-gradient(rgba(0, 0, 0, 12), rgba(0, 0, 0, 0.12)), 
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
                         url('fc143676-bf14-4c93-9c77-680ee7277751.png');
             background-size: cover;
             background-position: center;
@@ -559,8 +558,191 @@
             }
         }
 
-        /* MOBILE RESPONSIVE */
+        /* MOBILE RESPONSIVE - 768px */
         @media (max-width: 768px) {
+            .navbar-container {
+                padding: 0 20px;
+            }
+
+            .navbar-logo img {
+                height: 45px;
+            }
+
+            .hero-section {
+                padding: 110px 20px 50px;
+                min-height: 100vh;
+                background-attachment: scroll;
+            }
+
+            .hero-title {
+                font-size: 3rem;
+                margin-bottom: 20px;
+                line-height: 1.2;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.3rem;
+                margin-bottom: 15px;
+            }
+            
+            .hero-text {
+                font-size: 1.1rem;
+                margin-bottom: 35px;
+            }
+
+            .countdown-container {
+                padding: 25px;
+                max-width: 95%;
+                border-radius: 15px;
+            }
+
+            .countdown-title {
+                font-size: 1rem;
+                margin-bottom: 20px;
+            }
+
+            .countdown-grid {
+                gap: 12px;
+            }
+
+            .countdown-item {
+                padding: 15px 8px;
+                border-radius: 12px;
+            }
+
+            .countdown-number {
+                font-size: 1.8rem;
+            }
+
+            .countdown-label {
+                font-size: 0.75rem;
+                margin-top: 6px;
+            }
+
+            .container {
+                padding: 0 20px;
+            }
+
+            .about-section {
+                padding: 60px 0;
+            }
+
+            .section-title {
+                font-size: 2.5rem;
+                margin-bottom: 20px;
+            }
+
+            .content-card {
+                padding: 30px 25px;
+                margin-bottom: 40px;
+                border-radius: 15px;
+            }
+
+            .content-card h3 {
+                font-size: 1.5rem;
+                margin-bottom: 18px;
+            }
+
+            .content-card p {
+                font-size: 0.95rem;
+                line-height: 1.7;
+                margin-bottom: 18px;
+            }
+
+            .feature-card {
+                flex-direction: column !important;
+                text-align: center;
+                gap: 25px;
+                padding: 25px;
+                margin-bottom: 35px;
+                border-radius: 12px;
+            }
+
+            .feature-image {
+                max-width: 280px;
+                margin: 0 auto;
+            }
+
+            .feature-image img {
+                height: 200px;
+                border-radius: 10px;
+            }
+
+            .feature-content h3 {
+                font-size: 1.3rem;
+                margin-bottom: 15px;
+                text-align: center;
+            }
+
+            .feature-content p {
+                font-size: 0.95rem;
+                margin-bottom: 15px;
+                text-align: center;
+            }
+
+            .info-card {
+                padding: 30px 25px;
+                margin-bottom: 35px;
+                border-radius: 12px;
+            }
+
+            .info-card h3 {
+                font-size: 1.4rem;
+                margin-bottom: 18px;
+            }
+
+            .info-card p {
+                font-size: 0.95rem;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            .footer-section {
+                padding: 50px 0 25px;
+            }
+
+            .footer-title {
+                font-size: 1.4rem;
+                margin-bottom: 25px;
+            }
+
+            .social-links {
+                gap: 20px;
+                margin-bottom: 25px;
+            }
+
+            .social-link {
+                padding: 10px;
+            }
+
+            .social-icon {
+                width: 26px;
+                height: 26px;
+            }
+
+            .footer-text {
+                font-size: 0.85rem;
+                padding-top: 15px;
+                margin-top: 15px;
+            }
+
+            .mobile-menu {
+                width: 85%;
+                padding-top: 90px;
+            }
+
+            .mobile-menu ul {
+                padding: 0 25px;
+            }
+
+            .mobile-menu ul li a {
+                font-size: 16px;
+                padding: 12px 0;
+            }
+        }
+
+        /* SMALL MOBILE - 480px */
+        @media (max-width: 480px) {
             .navbar-container {
                 padding: 0 15px;
             }
@@ -571,36 +753,38 @@
 
             .hero-section {
                 padding: 100px 15px 40px;
-                min-height: 90vh;
+                min-height: 100vh;
             }
 
             .hero-title {
-                font-size: 2.8rem;
-                margin-bottom: 15px;
+                font-size: 2.5rem;
+                margin-bottom: 18px;
+                line-height: 1.1;
             }
-            
+
             .hero-subtitle {
                 font-size: 1.1rem;
                 margin-bottom: 12px;
             }
-            
+
             .hero-text {
                 font-size: 1rem;
                 margin-bottom: 30px;
             }
 
             .countdown-container {
-                padding: 25px 20px;
-                max-width: 90%;
+                padding: 20px 15px;
+                max-width: 100%;
+                margin: 0 10px;
             }
 
             .countdown-title {
-                font-size: 1rem;
+                font-size: 0.9rem;
                 margin-bottom: 15px;
             }
 
             .countdown-grid {
-                gap: 10px;
+                gap: 8px;
             }
 
             .countdown-item {
@@ -614,6 +798,7 @@
 
             .countdown-label {
                 font-size: 0.7rem;
+                margin-top: 5px;
             }
 
             .container {
@@ -625,30 +810,30 @@
             }
 
             .section-title {
-                font-size: 2.2rem;
+                font-size: 2rem;
+                margin-bottom: 15px;
             }
 
             .content-card {
-                padding: 30px 20px;
-                margin-bottom: 40px;
+                padding: 25px 20px;
+                margin-bottom: 35px;
             }
 
             .content-card h3 {
-                font-size: 1.4rem;
+                font-size: 1.3rem;
                 margin-bottom: 15px;
             }
 
             .content-card p {
                 font-size: 0.9rem;
+                line-height: 1.6;
                 margin-bottom: 15px;
             }
 
             .feature-card {
-                flex-direction: column !important;
-                text-align: center;
-                gap: 20px;
                 padding: 20px;
                 margin-bottom: 30px;
+                gap: 20px;
             }
 
             .feature-image {
@@ -670,22 +855,36 @@
             }
 
             .info-card {
-                padding: 30px 20px;
+                padding: 25px 20px;
                 margin-bottom: 30px;
             }
 
             .info-card h3 {
-                font-size: 1.3rem;
+                font-size: 1.2rem;
                 margin-bottom: 15px;
             }
 
             .info-card p {
                 font-size: 0.9rem;
+                margin-bottom: 18px;
+            }
+
+            .footer-section {
+                padding: 40px 0 20px;
+            }
+
+            .footer-title {
+                font-size: 1.2rem;
                 margin-bottom: 20px;
             }
 
             .social-links {
                 gap: 15px;
+                margin-bottom: 20px;
+            }
+
+            .social-link {
+                padding: 8px;
             }
 
             .social-icon {
@@ -699,21 +898,31 @@
 
             .mobile-menu {
                 width: 90%;
+                padding-top: 80px;
+            }
+
+            .mobile-menu ul {
+                padding: 0 20px;
+            }
+
+            .mobile-menu ul li {
+                margin-bottom: 20px;
+            }
+
+            .mobile-menu ul li a {
+                font-size: 15px;
+                padding: 10px 0;
             }
         }
 
-        /* SMALL MOBILE */
-        @media (max-width: 480px) {
+        /* EXTRA SMALL MOBILE */
+        @media (max-width: 360px) {
             .hero-title {
                 font-size: 2.2rem;
             }
 
-            .hero-subtitle {
-                font-size: 1rem;
-            }
-
             .countdown-grid {
-                gap: 8px;
+                gap: 6px;
             }
 
             .countdown-item {
@@ -724,28 +933,24 @@
                 font-size: 1.3rem;
             }
 
-            .countdown-container {
-                padding: 20px 15px;
-            }
-
-            .navbar-logo img {
-                height: 35px;
-            }
-
-            .hero-section {
-                padding: 90px 10px 30px;
-            }
-
-            .container {
-                padding: 0 10px;
-            }
-
-            .about-section {
-                padding: 40px 0;
+            .countdown-label {
+                font-size: 0.65rem;
             }
 
             .section-title {
                 font-size: 1.8rem;
+            }
+
+            .content-card {
+                padding: 20px 15px;
+            }
+
+            .feature-card {
+                padding: 15px;
+            }
+
+            .info-card {
+                padding: 20px 15px;
             }
         }
     </style>
